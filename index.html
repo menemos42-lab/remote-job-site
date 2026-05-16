@@ -13,20 +13,27 @@
         <nav>
             <a href="#jobs">Find Work</a>
             <a href="#post-job">Post a Job</a>
-            <a href="#" class="btn-nav">Sign In</a>
+            <a href="#" class="btn-nav" onclick="openLogin()">Sign In</a>
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Work From Anywhere in the World</h1>
-            <p>Skip the commute. Discover curated, high-paying remote roles at top global tech and creative companies.</p>
+    <div id="loginModal" class="login-modal" style="display:none;">
+        <div class="login-card">
+            <span class="close-modal" onclick="closeLogin()">&times;</span>
+            <h2>Welcome to FlexWork</h2>
+            <p>Sign in to track your remote applications.</p>
             
-            <form class="search-box" onsubmit="event.preventDefault(); alert('Filtering live remote jobs...');">
-                <input type="text" placeholder="Job title, skill, or company..." required>
-                <button type="submit" class="btn-search">Search</button>
-            </form>
+            <button class="btn-google-login" onclick="alert('Connecting safely to Google Account Services...'); closeLogin();">
+                <img src="https://fonts.gstatic.com/s/i/productlogos/googleg/v6/24px.svg" alt="Google Logo">
+                Continue with Gmail
+            </button>
+            
+            <div class="login-divider"><span>or email</span></div>
+            <input type="email" placeholder="Enter your email address" class="modal-input">
+            <button class="btn-submit-login" onclick="alert('Magic login link sent to your inbox!'); closeLogin();">Next</button>
         </div>
+    </div>
+
     </section>
 
     <section class="stats">
