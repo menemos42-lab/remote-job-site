@@ -434,3 +434,113 @@ footer h3 { color: white; font-size: 16px; margin-bottom: 12px; }
 
 .footer-hr { border: 0; border-top: 1px solid #1e293b; margin: 30px 0 20px; }
 .copyright { text-align: center; font-size: 12px; color: #64748b; }
+/* Premium Gmail Login Modal Styling */
+.login-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11, 15, 25, 0.85);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.login-card {
+    background-color: #0f172a;
+    border: 1px solid #1e293b;
+    padding: 40px 30px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    color: #64748b;
+    cursor: pointer;
+}
+
+.login-card h2 { color: white; font-size: 24px; margin-bottom: 6px; }
+.login-card p { color: #94a3b8; font-size: 14px; margin-bottom: 25px; }
+
+/* Gmail Auth Button Design */
+.btn-google-login {
+    width: 100%;
+    background-color: #ffffff;
+    color: #1e293b;
+    border: none;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 12px rgba(255,255,255,0.05);
+}
+
+.btn-google-login img {
+    width: 18px;
+    height: 18px;
+}
+
+.login-divider {
+    margin: 20px 0;
+    position: relative;
+    text-align: center;
+}
+.login-divider::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #1e293b;
+    z-index: 1;
+}
+.login-divider span {
+    background-color: #0f172a;
+    padding: 0 10px;
+    color: #64748b;
+    font-size: 12px;
+    position: relative;
+    z-index: 2;
+    text-transform: uppercase;
+}
+
+.modal-input {
+    width: 100%;
+    padding: 12px;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.btn-submit-login {
+    width: 100%;
+    background-color: #6366f1;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
