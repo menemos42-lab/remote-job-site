@@ -3,186 +3,240 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Remote Jobs - Find Your Dream Job</title>
-    <link rel="stylesheet" href="style.css">
+    <title>FlexWork | Premium Remote Job Board</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+
     <header>
-        <nav class="navbar">
-            <div class="logo">💼 Remote Jobs</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#jobs">Jobs</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <div class="logo">🚀 FlexWork</div>
+        <nav>
+            <a href="#jobs">Find Work</a>
+            <a href="#post-job">Post a Job</a>
+            <a href="#" class="btn-nav">Sign In</a>
         </nav>
     </header>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1>Find Your Next Remote Job</h1>
-                <p>Discover thousands of remote opportunities worldwide</p>
-                <div class="search-bar">
-                    <input type="text" placeholder="Search job title, company, or keyword...">
-                    <button class="search-btn">Search</button>
-                </div>
-            </div>
-        </section>
-
-        <section id="jobs" class="jobs">
-            <h2>Latest Job Listings</h2>
-            <div class="filters">
-                <select class="filter-select">
-                    <option value="">All Categories</option>
-                    <option value="development">Development</option>
-                    <option value="design">Design</option>
-                    <option value="marketing">Marketing</option>
-                    <option value="sales">Sales</option>
-                    <option value="support">Support</option>
-                </select>
-                <select class="filter-select">
-                    <option value="">All Locations</option>
-                    <option value="usa">USA</option>
-                    <option value="europe">Europe</option>
-                    <option value="asia">Asia</option>
-                    <option value="global">Global</option>
-                </select>
-            </div>
-            <div class="job-listings">
-                <div class="job-card">
-                    <div class="job-header">
-                        <h3>Senior Frontend Developer</h3>
-                        <span class="salary">$80k - $120k/year</span>
-                    </div>
-                    <p class="company">Tech Startup Inc.</p>
-                    <p class="description">We're looking for an experienced frontend developer to join our growing team.</p>
-                    <div class="job-meta">
-                        <span class="tag">React</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">Full-time</span>
-                        <span class="location">🌍 Global</span>
-                    </div>
-                    <button class="apply-btn">Apply Now</button>
-                </div>
-
-                <div class="job-card">
-                    <div class="job-header">
-                        <h3>UX/UI Designer</h3>
-                        <span class="salary">$70k - $100k/year</span>
-                    </div>
-                    <p class="company">Creative Agency Co.</p>
-                    <p class="description">Join our design team and create beautiful user experiences for global clients.</p>
-                    <div class="job-meta">
-                        <span class="tag">Figma</span>
-                        <span class="tag">UI Design</span>
-                        <span class="tag">Full-time</span>
-                        <span class="location">🌍 Europe</span>
-                    </div>
-                    <button class="apply-btn">Apply Now</button>
-                </div>
-
-                <div class="job-card">
-                    <div class="job-header">
-                        <h3>Content Marketing Manager</h3>
-                        <span class="salary">$60k - $85k/year</span>
-                    </div>
-                    <p class="company">Digital Media Group</p>
-                    <p class="description">Manage content strategy and oversee our marketing campaigns across platforms.</p>
-                    <div class="job-meta">
-                        <span class="tag">Content</span>
-                        <span class="tag">Marketing</span>
-                        <span class="tag">Full-time</span>
-                        <span class="location">🌍 USA</span>
-                    </div>
-                    <button class="apply-btn">Apply Now</button>
-                </div>
-
-                <div class="job-card">
-                    <div class="job-header">
-                        <h3>Backend Developer (Python)</h3>
-                        <span class="salary">$85k - $130k/year</span>
-                    </div>
-                    <p class="company">SaaS Solutions Ltd.</p>
-                    <p class="description">Build scalable backend systems using Python and modern cloud technologies.</p>
-                    <div class="job-meta">
-                        <span class="tag">Python</span>
-                        <span class="tag">AWS</span>
-                        <span class="tag">Full-time</span>
-                        <span class="location">🌍 Global</span>
-                    </div>
-                    <button class="apply-btn">Apply Now</button>
-                </div>
-
-                <div class="job-card">
-                    <div class="job-header">
-                        <h3>Customer Support Specialist</h3>
-                        <span class="salary">$40k - $60k/year</span>
-                    </div>
-                    <p class="company">E-commerce Platform</p>
-                    <p class="description">Provide exceptional support to our customers and help grow our community.</p>
-                    <div class="job-meta">
-                        <span class="tag">Support</span>
-                        <span class="tag">Part-time</span>
-                        <span class="location">🌍 Asia</span>
-                    </div>
-                    <button class="apply-btn">Apply Now</button>
-                </div>
-
-                <div class="job-card">
-                    <div class="job-header">
-                        <h3>Social Media Strategist</h3>
-                        <span class="salary">$50k - $75k/year</span>
-                    </div>
-                    <p class="company">Brand Collective</p>
-                    <p class="description">Develop and execute social media strategies for global brands.</p>
-                    <div class="job-meta">
-                        <span class="tag">Social Media</span>
-                        <span class="tag">Marketing</span>
-                        <span class="tag">Full-time</span>
-                        <span class="location">🌍 Global</span>
-                    </div>
-                    <button class="apply-btn">Apply Now</button>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="about">
-            <h2>Why Work Remotely?</h2>
-            <div class="benefits">
-                <div class="benefit-card">
-                    <h3>🏠 Work from Anywhere</h3>
-                    <p>Freedom to work from home, cafes, or anywhere in the world</p>
-                </div>
-                <div class="benefit-card">
-                    <h3>⏰ Flexible Schedule</h3>
-                    <p>Balance work and personal life with flexible working hours</p>
-                </div>
-                <div class="benefit-card">
-                    <h3>💰 Better Opportunities</h3>
-                    <p>Access to global job market with competitive salaries</p>
-                </div>
-                <div class="benefit-card">
-                    <h3>🚀 Career Growth</h3>
-                    <p>Develop new skills and advance your career globally</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact">
-            <h2>Get Job Alerts</h2>
-            <p>Subscribe to receive the latest remote job opportunities</p>
-            <form class="newsletter-form">
-                <input type="email" placeholder="Enter your email" required>
-                <button type="submit" class="subscribe-btn">Subscribe</button>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Work From Anywhere in the World</h1>
+            <p>Skip the commute. Discover curated, high-paying remote roles at top global tech and creative companies.</p>
+            
+            <form class="search-box" onsubmit="event.preventDefault(); alert('Filtering live remote jobs...');">
+                <input type="text" placeholder="Job title, skill, or company..." required>
+                <button type="submit" class="btn-search">Search</button>
             </form>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stat-item"><h3>14K+</h3><p>Active Jobs</p></div>
+        <div class="stat-item"><h3>5,200+</h3><p>Verified Companies</p></div>
+        <div class="stat-item"><h3>$92k</h3><p>Avg. Remote Salary</p></div>
+    </section>
+
+    <section id="jobs" class="jobs-section">
+        <h2>Featured Remote Positions</h2>
+        <p class="subtitle">100% verified work-from-home contracts and permanent roles.</p>
+
+        <div class="category-filters">
+            <button class="filter-btn active">All Roles</button>
+            <button class="filter-btn">Tech / Dev</button>
+            <button class="filter-btn">Design & Creative</button>
+            <button class="filter-btn">Operations</button>
+        </div>
+
+        <div class="job-list">
+            
+            <div class="job-card">
+                <div class="job-header">
+                    <div>
+                        <h3>Senior Frontend Engineer</h3>
+                        <p class="company">TechSphere • 🌍 Worldwide</p>
+                    </div>
+                    <span class="tag-type full-time">Full-Time</span>
+                </div>
+                <p class="job-desc">Looking for a React and TypeScript specialist to help architect the next generation of our collaborative dashboard systems.</p>
+                <div class="job-footer">
+                    <span class="tag-salary">💵 $120,000 - $150,000</span>
+                    <a href="#apply" class="btn-apply" onclick="selectJob('Senior Frontend Engineer')">Apply Now</a>
+                </div>
+            </div>
+
+            <div class="job-card">
+                <div class="job-header">
+                    <div>
+                        <h3>Lead UI/UX Designer</h3>
+                        <p class="company">PixelCrafters • 🇺🇸 US Remote</p>
+                    </div>
+                    <span class="tag-type contract">Contract</span>
+                </div>
+                <p class="job-desc">Own the end-to-end user experience for a highly anticipated Web3 mobile app. Fast-paced, design-driven culture.</p>
+                <div class="job-footer">
+                    <span class="tag-salary">💵 $85 - $110 / hr</span>
+                    <a href="#apply" class="btn-apply" onclick="selectJob('Lead UI/UX Designer')">Apply Now</a>
+                </div>
+            </div>
+
+            <div class="job-card">
+                <div class="job-header">
+                    <div>
+                        <h3>Customer Success Specialist</h3>
+                        <p class="company">FlowState SaaS • 🌍 Worldwide</p>
+                    </div>
+                    <span class="tag-type full-time">Full-Time</span>
+                </div>
+                <p class="job-desc">Manage inbound support, build documentation, and ensure our global customer base loves our product interface.</p>
+                <div class="job-footer">
+                    <span class="tag-salary">💵 $55,000 - $70,000</span>
+                    <a href="#apply" class="btn-apply" onclick="selectJob('Customer Success Specialist')">Apply Now</a>
+                </div>
+            </div>
+
+            <div class="job-card">
+                <div class="job-header">
+                    <div>
+                        <h3>AI Prompt Engineer</h3>
+                        <p class="company">Nexus Labs • 🇬🇧 UK / EU</p>
+                    </div>
+                    <span class="tag-type part-time">Part-Time</span>
+                </div>
+                <p class="job-desc">Help evaluate, tweak, and optimize LLM training datasets for custom enterprise conversational tools.</p>
+                <div class="job-footer">
+                    <span class="tag-salary">💵 $70 - $90 / hr</span>
+                    <a href="#apply" class="btn-apply" onclick="selectJob('AI Prompt Engineer')">Apply Now</a>
+                </div>
+            </div>
+
+            <div class="job-card">
+                <div class="job-header">
+                    <div>
+                        <h3>Growth Marketing Manager</h3>
+                        <p class="company">Sprout Media • 🌍 Worldwide</p>
+                    </div>
+                    <span class="tag-type full-time">Full-Time</span>
+                </div>
+                <p class="job-desc">Scale our customer acquisition funnels via paid social, SEO optimization, and data-backed performance strategies.</p>
+                <div class="job-footer">
+                    <span class="tag-salary">💵 $90,000 - $115,000</span>
+                    <a href="#apply" class="btn-apply" onclick="selectJob('Growth Marketing Manager')">Apply Now</a>
+                </div>
+            </div>
+
+            <div class="job-card">
+                <div class="job-header">
+                    <div>
+                        <h3>Data Privacy Analyst</h3>
+                        <p class="company">SecureGrid • 🇨🇦 Canada Remote</p>
+                    </div>
+                    <span class="tag-type contract">Contract</span>
+                </div>
+                <p class="job-desc">Review security infrastructure compliance, organize policy updates, and manage internal data workflows.</p>
+                <div class="job-footer">
+                    <span class="tag-salary">💵 $95,000 - $110,000</span>
+                    <a href="#apply" class="btn-apply" onclick="selectJob('Data Privacy Analyst')">Apply Now</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="post-job" class="pricing-section">
+        <h2>Recruiting Remote Talent?</h2>
+        <p class="section-subtitle">Get your open listings in front of millions of highly skilled remote professionals.</p>
+        
+        <div class="pricing-grid">
+            <div class="price-card">
+                <h3>Standard Post</h3>
+                <div class="price">$199<span>/month</span></div>
+                <p>Perfect for small startups looking to fill a single role quickly.</p>
+                <ul>
+                    <li>Live listing for 30 days</li>
+                    <li>Distributed to weekly newsletter</li>
+                    <li>Verified "Remote" Badge</li>
+                </ul>
+                <button class="btn-price" onclick="alert('Proceeding to Stripe Checkout...');">Post Standard</button>
+            </div>
+            
+            <div class="price-card featured-plan">
+                <span class="popular-badge">Most Popular</span>
+                <h3>Premium Feature</h3>
+                <div class="price">$349<span>/month</span></div>
+                <p>Maximize your reach with top-of-feed placement and branding.</p>
+                <ul>
+                    <li>Pinned to top of feed for 7 days</li>
+                    <li>Highlighted card styling</li>
+                    <li>Social media blast (X, LinkedIn)</li>
+                    <li>Custom company branding page</li>
+                </ul>
+                <button class="btn-price premium-btn" onclick="alert('Proceeding to Secure Checkout...');">Post Featured</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="apply" class="application-section">
+        <div class="form-container">
+            <h2>Submit Your Remote Profile</h2>
+            <p class="form-subtitle">Apply directly through FlexWork to skip corporate parsing bots.</p>
+            
+            <form class="job-app-form" onsubmit="event.preventDefault(); alert('Profile and Application routed safely to company HR dashboard!');">
+                <div class="form-group">
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <select id="positionSelect" required>
+                        <option value="" disabled selected>Select Position You're Applying For</option>
+                        <option value="frontend">Senior Frontend Engineer</option>
+                        <option value="design">Lead UI/UX Designer</option>
+                        <option value="success">Customer Success Specialist</option>
+                        <option value="prompt">AI Prompt Engineer</option>
+                        <option value="marketing">Growth Marketing Manager</option>
+                        <option value="data">Data Privacy Analyst</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Link to Resume or LinkedIn Profile" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Briefly highlight why you're a great fit for a fully autonomous, remote work environment..." rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit-app">Submit Application 🚀</button>
+            </form>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2026 Remote Jobs. All rights reserved.</p>
-        <p>Find your dream remote job today!</p>
+        <div class="footer-layout">
+            <div class="footer-brand">
+                <h3>🚀 FlexWork</h3>
+                <p>Building the decentralized future of professional careers.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Find Us Online</h3>
+                <div class="social-series">
+                    <a href="#" class="social-link x-logo">Twitter / X</a>
+                    <a href="#" class="social-link li-logo">LinkedIn</a>
+                    <a href="#" class="social-link gh-logo">GitHub</a>
+                </div>
+            </div>
+        </div>
+        <hr class="footer-hr">
+        <p class="copyright">&copy; 2026 FlexWork Media Group. Find freedom in your career.</p>
     </footer>
+
+    <script>
+        function selectJob(jobTitle) {
+            const dropdown = document.getElementById('positionSelect');
+            for (let i = 0; i < dropdown.options.length; i++) {
+                if (dropdown.options[i].text === jobTitle) {
+                    dropdown.selectedIndex = i;
+                    break;
+                }
+            }
+        }
+    </script>
 </body>
 </html>
